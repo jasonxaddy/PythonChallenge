@@ -7,16 +7,18 @@ csv_path = os.path.join('..', 'Resources', 'budget_data.csv')
 with open(csv_path, 'r', newline='') as csvfile:
     budget = csv.reader(csvfile, delimiter=',')
     
+    # creating empty sets to append to later
     months = []
     profit_loss = []
     change = []
     diff = []
     max_month = []
 
+    # skipping headers
     csv_header = next(csvfile)
 
    
-# using <row[0].split(',')[0]> to pull month/year values, 
+# using <row[0].split(',')[0]> to pull month/year values. I had to copy and paste raw data into Excel to put it into csv format. 
 # using <int(row[0].split(',')[1]) to pull Profit/Loss values because the .csv file did not split at the comma.  
 # Because it didn't split, the numbers weren't formatted as integers. 
     
