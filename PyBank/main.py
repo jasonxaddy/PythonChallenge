@@ -36,28 +36,9 @@ with open(csv_path, 'r', newline='') as csvfile:
             max_loss = current_diff
             max_loss_month = row[0]
 
-print(max_profit)
-print(max_loss)
-
-    # print(total_diff)
 
 average_diff = round((total_diff)/(months - 1), 2)
 
-    #print(months)
-    #print(total_profit)
-    #print(months)
-    #print(profit_loss)
-
-   # i = 1
-    # for i, x in enumerate(profit_loss):
-       #diff.append(profit_loss[i] - profit_loss[i-1])
-        # print(i)
-
-
-#max_month = max(row[1])
-#print(max_month)
-
-#print(diff)
 
 print('Financial Analysis')
 print('--------------------------------------------')
@@ -67,14 +48,3 @@ print(f'Total: ${total_profit}')
 print(f'Average Change : ${average_diff}')
 print(f'Greatest Increase in Profits: {max_profit_month} (${max_profit})')
 print(f'Greatest Decrease in Profits: {max_loss_month} (${max_loss})')
-# average = sum(pl)/len(months)
-# print(f'Average Profit: ${average}')
-# print((sum(pl)/len(pl)))
-
-# total_diff = diff.pop(0)
-# print(f'Average Change: $ {total_diff/len(diff)}')
-# print(f'Greatest Increase in Profits: (${max(diff)})')
-
-
- 
-# print(f'Greatest Decrease in Profits: (${min(diff)})')
